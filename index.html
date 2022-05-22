@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- BOOTSTRAP -->
+        <!-- Package version used for offline accessibility -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- OpenDyslexic 2 Webfontkit -->
+        <link rel="stylesheet" href="css/OpenDyslexicWebfontkit/stylesheet.css">
+
+        <!-- Implementing the font -->
+        <style>
+            p {
+                font-family: 'opendyslexicregular';
+            }
+
+            strong {
+                font-family: 'opendyslexicbold';
+            }
+        </style>
+
+        <!-- Importing the actual functionality -->
+        <script src="js/processor.js"></script>
+
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-body">
+                <p id="formatted-text-field" class="access-style"></p>
+            </div>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Paste text here</span>
+            <textarea class="form-control" id="text-to-parse" aria-label="Paste text here"></textarea>
+            <button class="btn btn-outline-secondary" type="button" id="accessibility-processor">Process text</button>
+        </div>
+    </body>
+</html>
